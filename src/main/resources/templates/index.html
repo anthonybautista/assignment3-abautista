@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Avalanche to Metamask</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+    <div th:insert="fragments/_header :: header"></div>
+    <h2>
+        Avalanche Network
+    </h2>
+    <p>
+        Avalanche is an EVM-compatible proof-of-stake blockchain that provides fast transaction settlement and excellent scaling.
+    </p>
+    <img th:src="@{/img/logo.svg}" alt="Avalanche Logo">
+    <figcaption>logo from <a href="https://avalanche.network">avalanche.network</a></figcaption>
+    <h2>
+        Creating an Avalanche Wallet
+    </h2>
+    <p>
+        One of the most popular wallets for EVM-compatible blockchains is called MetaMask. This guide will walk you through
+        creating a MetaMask wallet and adding the Avalanche Network so that you can interact with the blockchain.
+    </p>
+    <a th:href="@{/tutorial/step1}">Begin Tutorial</a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</div>
+</body>
+</html>

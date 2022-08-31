@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Avalanche to Metamask</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+    <div th:insert="fragments/_header :: header"></div>
+    <h2>
+        Step 2: Creating Your Wallet
+    </h2>
+    <p>
+        Creating a new wallet with MetaMask is easy! Once your extension is installed open it up and click "Get Started".
+    </p>
+    <img th:src="@{/img/get-started.png}" alt="Get Started Prompt">
+    <h2>
+        Follow the prompts
+    </h2>
+    <p>
+        MetaMask will take you through the process of setting up your wallet. Be sure to create a secure password and
+        WRITE DOWN YOUR SEED PHRASE. Keep in mind that your seed phrase is THE KEY to your wallet. If you lose this
+        phrase you will lose access to your wallet!
+    </p>
+    <a th:href="@{/tutorial/step3}">Next Step</a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</div>
+</body>
+</html>

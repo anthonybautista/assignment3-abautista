@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Avalanche to Metamask</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+    <div th:insert="fragments/_header :: header"></div>
+    <h2>
+        Step 3: Importing Avalanche Network
+    </h2>
+    <p>
+        Now that your wallet is set up, it's time to add the Avalanche Network. Click the network dropdown (default network
+        is Ethereum), and then click "Add Network".
+    </p>
+    <img th:src="@{/img/add-network.png}" alt="Add Network">
+    <h2>
+        Select Avalanche Network
+    </h2>
+    <p>
+        Luckily, MetaMask recently added Avalanche as a pre-installed network. It used to be that you had to enter
+        all sorts of information such as the RPC and block explorer URL, but now it's as simple as selecting Avalanche!
+    </p>
+    <p>
+        That's it! Now you can interact with dApps on the Avalanche Network!
+    </p>
+    <a th:href="@{/}">Return Home</a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</div>
+</body>
+</html>

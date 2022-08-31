@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Avalanche to Metamask</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+    <div th:insert="fragments/_header :: header"></div>
+    <h2>
+        Step 1: Installing Metamask
+    </h2>
+    <p>
+        MetaMask is a browser extension and crypto wallet that allows you to interface with EVM-compatible blockchains.
+    </p>
+    <img th:src="@{/img/metamask.png}" alt="MetaMask Logo">
+    <figcaption>logo from <a href="https://metamask.io">metamask.io</a></figcaption>
+    <h2>
+        Download and Install
+    </h2>
+    <p>
+        MetaMask works for many browsers and operating systems, including Chrome, Android, and iOS. To download and
+        the app or extension visit the MetaMask website at: <a href="https://metamask.io/download/">metamask.io/download</a>
+    </p>
+    <a th:href="@{/tutorial/step2}">Next Step</a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</div>
+</body>
+</html>
